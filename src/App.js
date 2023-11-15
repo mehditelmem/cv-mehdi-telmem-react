@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import User from "./components/User";
+import Skills from "./components/Skills";
+import Profil from './components/Profil';
+import FormationsExperiences from './components/FormationsExperiences';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <div className="grid_container">
+        <div className="sidebar">
+          <User />
+          <Skills />
+        </div>
+        <div className="main">
+          <Profil />
+          <FormationsExperiences />
+        </div>
+      </div>
+      
+
+      
+      {/* react, material ui, react-html2pdf */}
+      
+
+      {/* colonne de droite */}
+      {/* formations - formations */}
+      {/* exp - experiences */}
+      
+      {/* light/dark mode */}
+      {/* generation pdf */}
     </div>
   );
 }
